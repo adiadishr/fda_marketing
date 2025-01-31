@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="mt-[76px] py-20 md:py-40 container mx-auto px-4">
+      <div className="container px-4 py-32 mx-auto md:py-40">
         <Image src="/backdrop.png" alt="backdrop" className="absolute inset-0 -top-48 -z-10 opacity-5" width={20000} height={0} />
         <div className="text-3xl font-bold text-center text-neutral-900 md:text-5xl">Food Distributors Australia</div>
         <div className="text-xl font-light text-center text-neutral-800 md:text-3xl">Delivering Culinary Excellence</div>

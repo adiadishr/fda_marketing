@@ -3,10 +3,10 @@ export const menuData = [
         title: "Home",
         path: "/",
     },
-    // {
-    //     title: "About",
-    //     path: "/about",
-    // },
+    {
+        title: "About",
+        path: "/about",
+    },
     {
         title: "Catalog",
         path: "/catalog",
