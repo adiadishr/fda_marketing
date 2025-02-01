@@ -1,14 +1,13 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="relative z-10 pt-20 bg-neutral-900">
+        <footer className="relative z-10 pt-24 md:pt-32 bg-neutral-900">
             <div className="container px-4 mx-auto">
-                <div className="flex flex-wrap -mx-4">
-                    <div className="w-full px-4 mb-10 md:pr-16 md:w-1/2 lg:w-2/5">
-                        <p className="text-justify text-neutral-200">
+                <div className="flex flex-wrap -mx-4 mb-10">
+                    <div className="w-full mb-10 md:mb-0 px-4 md:pr-16 md:w-1/2 lg:w-2/5">
+                        <p className="text-justify text-neutral-200 text-lg/7">
                             With over 25 years of food service experience, we are a 100% Australian owned family business, committed to meeting all your food-related needs. Offering an extensive range of products across all food categories, including smallgoods, fresh meat, poultry, frozen seafood, dry and frozen goods, packaging, and chemicals, we ensure a one-call solution for our valued customers.
                         </p>
                     </div>

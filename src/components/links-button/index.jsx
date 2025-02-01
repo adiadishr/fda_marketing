@@ -47,9 +47,9 @@ export default function LinksButton() {
         },
     };
     return (
-        <div className="fixed z-10 flex flex-col gap-2 right-4 bottom-4">
+        <div className="fixed z-10 flex items-end md:flex-col gap-2 right-4 bottom-4">
             <motion.div
-                className="flex flex-col gap-2"
+                className="flex md:flex-col gap-2"
                 initial="hidden"
                 animate={isOpen ? "visible" : "hidden"}
                 variants={containerVariants}
