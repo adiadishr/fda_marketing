@@ -2,6 +2,7 @@ import { Funnel_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import LinksButton from "@/components/links-button";
 
 const sansFont = Funnel_Sans({
   variable: "--font-sans",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <LinksButton />
       </body>
     </html>
   );

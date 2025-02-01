@@ -1,13 +1,13 @@
 export default function Page() {
     return (
-        <div className="container px-4 pt-32 mx-auto md:pt-40">
+        <div className="container px-4 py-32 mx-auto md:py-40">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-7/12 xl:w-8/12">
                     <h2 className="text-2xl font-medium text-neutral-900 md:text-3xl">
-                        Need help? Contact us directly.
+                        Get in Touch
                     </h2>
                     <p className="mb-12 text-base md:text-lg text-neutral-800">
-                        Leave your details and our support team will get back to you ASAP.
+                        We’d love to hear from you! Whether you need a quote, want to place an order, or have questions about our products, our team is here to help.
                     </p>
                     <form>
                         <div className="flex flex-wrap -mx-4">

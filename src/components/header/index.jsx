@@ -56,7 +56,7 @@ const Header = () => {
                         <span>Become a customer</span>
                         <div className="flex items-center mt-0.5 ml-2 bg-white rounded-full animate-pulse size-2" />
                     </Link>
-                    <button onClick={() => setNav(!nav)} className="md:hidden">
+                    <button onClick={() => setNav(!nav)} className="lg:hidden">
                         {nav ? <X strokeWidth={1} /> : <Menu strokeWidth={1} />}
                     </button>
                 </div>
