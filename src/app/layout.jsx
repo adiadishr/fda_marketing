@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`${sansFont.variable} antialiased font-sans tracking-tighter`}>
+      <body className={`${sansFont.variable} antialiased font-sans tracking-tight bg-neutral-50`}>
         <Header />
         {children}
         <Footer />

@@ -19,11 +19,11 @@ export const menuData = [
 
 export const suppliers = [
     {
-        name: "MasterFoods",
+        name: "masterfoods",
         src: "/suppliers/masterfoods.png",
     },
     {
-        name: "Saptuto",
+        name: "saputo",
         src: "/suppliers/saputo.png",
     },
     {
