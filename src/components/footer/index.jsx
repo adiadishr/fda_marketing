@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="relative z-10 pt-24 md:pt-32 bg-neutral-900">
             <div className="container px-4 mx-auto">
                 <div className="flex flex-wrap mb-10 -mx-4">
-                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/5">
+                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/4">
                         <div className="mb-12 lg:mb-16">
                             <h2 className="mb-5 text-xl font-medium text-white">
                                 Useful Links
@@ -39,7 +39,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/5">
+                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/4">
                         <div className="mb-12 lg:mb-16">
                             <h2 className="mb-5 text-xl font-medium text-white">
                                 Terms
@@ -72,7 +72,32 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/5">
+                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/4">
+                        <div className="mb-12 lg:mb-16">
+                            <h2 className="mb-5 text-xl font-medium text-white">
+                                Support & Help
+                            </h2>
+                            <ul>
+                                <li>
+                                    <Link
+                                        href="/contact"
+                                        className="inline-block mb-4 text-base duration-300 text-neutral-200 hover:text-red-500"
+                                    >
+                                        Contact Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="inline-block mb-4 text-base duration-300 text-neutral-200 hover:text-red-500"
+                                    >
+                                        Terms of Use
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="w-1/2 px-4 md:w-3/12 lg:w-1/4">
                         <div className="mb-12 lg:mb-16">
                             <h2 className="mb-5 text-xl font-medium text-white">
                                 Support & Help

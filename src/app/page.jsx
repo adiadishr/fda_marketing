@@ -12,10 +12,10 @@ export default function Home() {
     <PageClient>
       <div className="container px-4 py-40 mx-auto">
         <Image src="/backdrop.png" alt="backdrop" className="absolute inset-0 md:-top-48 -z-10 opacity-5" width={20000} height={0} />
+        <div className="px-4 py-2 mx-auto mb-10 text-center text-red-600 border border-red-400 rounded-full bg-gradient-to-tr from-red-600/20 max-w-max">Proven service you can rely on.</div>
         <h2 className="text-4xl font-medium tracking-tight text-center text-neutral-900 md:text-5xl">Food Distributors Australia</h2>
         <div className="mt-4 text-lg text-center text-neutral-800 md:text-xl">Your One-Stop Shop for Restaurant Essentials in Sydney</div>
-        <div className="text-lg text-center text-neutral-800 md:text-xl">From Nuts to Seafood, We Supply Everything Your Kitchen Needs.</div>
-        <div className="px-4 py-2 mx-auto mt-10 mb-32 text-center text-red-600 border border-red-400 rounded-full bg-gradient-to-tr from-red-600/20 max-w-max">Proven service you can rely on.</div>
+        <div className="mb-20 text-lg text-center text-neutral-800 md:text-xl">From Nuts to Seafood, We Supply Everything Your Kitchen Needs.</div>
         <div className="flex flex-wrap w-full">
           <Carousel className="w-full mb-10 md:w-2/3 h-max md:mb-0">
             <CarouselContent>
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="text-3xl font-medium tracking-tight text-neutral-900 md:text-4xl">We provide quality, that you can trust.</div>
             <div className="flex items-center justify-center w-full">
               <MagneticButton>
-                <div className="z-50 p-2 text-xl translate-x-20 translate-y-12 bg-white">Explore <br /> Catalog</div>
+                <div className="z-50 p-2 text-xl translate-x-20 translate-y-12 bg-neutral-50">Explore <br /> Catalog</div>
                 <Link href="/catalog">
                   <CircleArrowRight strokeWidth={0.25} className="z-0 duration-500 hover:-rotate-45" size={160} />
                 </Link>
@@ -43,53 +43,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-4 pb-24 md:pb-32">
+      <div className="py-24 md:py-32 bg-neutral-900">
         <div className="container relative px-4 mx-auto">
-          <div className="absolute inset-0 overflow-hidden -z-10">
-            <svg
-              aria-hidden="true"
-              className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
-            >
-              <defs>
-                <pattern
-                  x="50%"
-                  y={-1}
-                  id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-                  width={200}
-                  height={200}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <path d="M100 200V.5M.5 .5H200" fill="none" />
-                </pattern>
-              </defs>
-              <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-                <path
-                  d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-                  strokeWidth={0}
-                />
-              </svg>
-              <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
-            </svg>
-          </div>
-          <h1 className="max-w-5xl mb-10 text-4xl font-medium tracking-tight text-gray-900 md:text-5xl">
+          <h1 className="max-w-5xl mb-10 text-4xl font-medium tracking-tight text-white md:text-5xl">
             Based in Sydney, we are a trusted supplier for businesses across the city.
           </h1>
           <div className="flex flex-col items-center gap-24 lg:flex-row">
             <div className="w-full lg:w-1/2">
-              <h1 className="max-w-5xl mb-10 text-2xl font-medium tracking-tight text-gray-900 md:text-3xl">
+              <h1 className="max-w-5xl mb-5 text-2xl font-medium tracking-tight text-neutral-50 md:text-3xl">
                 About us,
               </h1>
-              <p className="mb-5 text-lg text-gray-700 md:text-xl/8">
+              <p className="mb-5 text-base text-neutral-200 md:text-lg">
                 At Food Distributors Australia, we understand the needs of Sydney’s bustling food industry. Whether you run a restaurant, cafe, pizza shop, or catering business, we provide high-quality nuts, spices, oils, cheese, flour, seafood, and more—all delivered fresh and on time.
               </p>
-              <p className="mb-10 text-lg text-gray-700 md:text-xl/8">
+              <p className="mb-10 text-base text-neutral-200 md:text-lg">
                 We pride ourselves on offering a wide range of essential products, from premium nuts and spices to fresh seafood and dry goods. Our goal is to make your life easier by providing everything you need in one place, with reliable delivery and competitive pricing.
               </p>
               <div className="flex items-center justify-start gap-x-6">
-                <Link href="/store" className="rounded-md bg-red-600 px-3.5 py-2.5 text-base font-medium text-white shadow-xs hover:bg-red-500 duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                  Order now <span className="float-right flex items-center mt-2.5 ml-2.5 bg-white rounded-full animate-pulse size-2" />
+                <Link href="/store" className="rounded-md bg-white px-3.5 py-2.5 text-base font-medium text-neutral-900 hover:bg-neutral-200 duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  Order now <span className="float-right flex items-center mt-2.5 ml-2.5 bg-neutral-900 rounded-full animate-pulse size-2" />
                 </Link>
-                <Link href="/about" className="text-base font-medium text-neutral-900">
+                <Link href="/about" className="text-base font-medium text-neutral-200">
                   Learn more <span aria-hidden="true">→</span>
                 </Link>
               </div>
@@ -109,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pb-40">
+      <div className="py-24 md:py-32">
         <div className="container px-4 mx-auto">
           <div className="text-4xl font-medium text-center text-neutral-900 md:text-5xl">We provide customers reliable products from top brands</div>
           <Marquee pauseOnHover className="[--duration:20s] mt-32 p-0 md:[--gap:4rem]" >
@@ -121,17 +95,13 @@ export default function Home() {
           </Marquee>
         </div>
       </div>
-      <div className="container px-4 pb-24 mx-auto md:pb-32">
-        <div className="relative py-16 overflow-hidden bg-red-600 rounded-xl md:py-32">
+      <div className="py-24 bg-red-600 md:py-32">
+        <div className="container relative mx-auto overflow-hidden">
           <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-              <div className="max-w-xl lg:max-w-lg">
+              <div className="flex flex-col justify-between h-full max-w-xl lg:max-w-lg">
                 <h2 className="text-4xl font-medium tracking-tight text-white md:text-5xl">Subscribe to our newsletter</h2>
-                <p className="mt-4 text-base text-neutral-200 md:text-lg">
-                  Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-                  dolore.
-                </p>
-                <div className="flex max-w-md mt-6 gap-x-4">
+                <div className="flex max-w-md mt-6 gap-x-4 lg:mt-0">
                   <label htmlFor="email-address" className="sr-only">
                     Email address
                   </label>
@@ -142,7 +112,7 @@ export default function Home() {
                     required
                     placeholder="Enter your email"
                     autoComplete="email"
-                    className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-neutral-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
+                    className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-neutral-200 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
                   />
                   <button
                     type="submit"

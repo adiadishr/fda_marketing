@@ -4,10 +4,6 @@ export const menuData = [
         path: "/",
     },
     {
-        title: "About",
-        path: "/about",
-    },
-    {
         title: "Catalog",
         path: "/catalog",
     },
@@ -45,5 +41,141 @@ export const suppliers = [
     {
         name: "safries",
         src: "/suppliers/safries.png",
+    },
+]
+
+export const filters = [
+    {
+        id: 'brand',
+        name: 'Brands',
+        options: suppliers.map(supplier => ({
+            value: supplier.name,
+            label: supplier.name,
+            checked: false,
+        })),
+    },
+    {
+        id: 'category',
+        name: 'Categories',
+        options: suppliers.map(supplier => ({
+            value: supplier.name,
+            label: supplier.name,
+            checked: false,
+        })),
+    },
+];
+
+export const products = [
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+    },
+    {
+        id: 1,
+        name: 'Basic Tee',
+        href: 'basic',
+        imageSrc: '/hero.png',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
     },
 ]

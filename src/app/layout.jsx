@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <LinksButton />
+        {/* <LinksButton /> */}
       </body>
     </html>
   );
