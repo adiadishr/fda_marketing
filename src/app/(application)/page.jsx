@@ -5,17 +5,18 @@ import { suppliers } from "@/constants";
 import { Calendar, CircleArrowRight, HandHeartIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import PageClient from "./page.client";
+import LenisProvider from "./lenis-provider";
 
 export default function Home() {
   return (
-    <PageClient>
-      <div className="container px-4 py-40 mx-auto">
+    <>
+
+      <div className="container px-4 py-32 mx-auto md:py-40">
         <Image src="/backdrop.png" alt="backdrop" className="absolute inset-0 md:-top-48 -z-10 opacity-5" width={20000} height={0} />
         <div className="px-4 py-2 mx-auto mb-10 text-center text-red-600 border border-red-400 rounded-full bg-gradient-to-tr from-red-600/20 max-w-max">Proven service you can rely on.</div>
         <h2 className="text-4xl font-medium tracking-tight text-center text-neutral-900 md:text-5xl">Food Distributors Australia</h2>
         <div className="mt-4 text-lg text-center text-neutral-800 md:text-xl">Your One-Stop Shop for Restaurant Essentials in Sydney</div>
-        <div className="mb-20 text-lg text-center text-neutral-800 md:text-xl">From Nuts to Seafood, We Supply Everything Your Kitchen Needs.</div>
+        <div className="mb-12 text-lg text-center md:mb-20 text-neutral-800 md:text-xl">From Nuts to Seafood, We Supply Everything Your Kitchen Needs.</div>
         <div className="flex flex-wrap w-full">
           <Carousel className="w-full mb-10 md:w-2/3 h-max md:mb-0">
             <CarouselContent>
@@ -150,6 +151,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </PageClient>
+    </>
   )
 }

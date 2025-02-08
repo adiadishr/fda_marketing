@@ -1,11 +1,11 @@
-import PageClient from "../page.client";
+import LenisProvider from "../lenis-provider";
 
 export default function Page() {
     return (
-        <PageClient>
+        <LenisProvider>
             <div className="container mt-[76px] px-4 py-32 mx-auto md:py-40">
                 <div className="flex flex-wrap">
-                    <div className="w-full lg:w-7/12 xl:w-8/12 relative">
+                    <div className="relative w-full lg:w-7/12 xl:w-8/12">
                         <h2 className="text-2xl font-medium text-neutral-900 md:text-3xl">
                             Get in Touch
                         </h2>
@@ -56,7 +56,7 @@ export default function Page() {
                                             name="message"
                                             rows={5}
                                             placeholder="Enter your Message"
-                                            className="w-full px-6 py-3 text-base border-b rounded-sm outline-none resize-none" 
+                                            className="w-full px-6 py-3 text-base border-b rounded-sm outline-none resize-none"
                                         ></textarea>
                                     </div>
                                 </div>
@@ -73,6 +73,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-        </PageClient>
+        </LenisProvider>
     )
 }

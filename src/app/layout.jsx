@@ -1,8 +1,5 @@
 import { Funnel_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import LinksButton from "@/components/links-button";
 
 const sansFont = Funnel_Sans({
   variable: "--font-sans",
@@ -16,11 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`${sansFont.variable} antialiased font-sans tracking-tight bg-neutral-50`}>
-        <Header />
+      <body className={`${sansFont.variable} antialiased font-sans tracking-tight bg-white`}>
         {children}
-        <Footer />
-        {/* <LinksButton /> */}
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { menuData } from "@/constants";
-import { Component, Home, LayoutList, Menu, Phone, SquareChevronLeft, Waypoints, X } from "lucide-react";
+import { Component, Home, LayoutList, Menu, Phone, Search, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -48,33 +48,47 @@ const Header = () => {
 
     return (
         <>
-            <header className="w-full fixed h-[60px] z-[1000] px-4 bg-neutral-50">
-                <div className="container flex items-center justify-between w-full h-full mx-auto backdrop-blur-sm">
-                    <Link href="/" className="relative">
-                        <Image
-                            src="/logo.png"
-                            alt="logo"
-                            width={80}
-                            height={0}
-                            className="w-full"
-                        />
-                    </Link>
-                    <div className="items-center hidden gap-4 lg:flex">
-                        {menuData.map((menuItem, idx) => {
-                            return (
-                                <Link key={idx} href={menuItem.path} className={cn("flex items-center gap-2 py-1 px-2 duration-300 rounded-full hover:backdrop-blur-md backdrop-blur-sm group", pathname == menuItem.path && "backdrop-blur-md bg-neutral-100")}>
-                                    <span className="text-neutral-800">{menuItem.title}</span>
-                                </Link>
-                            )
-                        })}
+            <header className="w-full fixed h-[56px] top-0 z-[1000] bg-neutral-50/95 backdrop-blur-md border-b px-4">
+                <div className="container flex items-center justify-between w-full h-full mx-auto">
+                    <div className="flex items-center">
+                        <Link href="/" className="relative lg:pr-4 lg:border-r">
+                            <Image
+                                src="/logo.png"
+                                alt="logo"
+                                width={60}
+                                height={0}
+                                className="w-full"
+                            />
+                        </Link>
+                        <div className="items-center hidden gap-4 pl-4 border-l lg:flex">
+                            {menuData.map((menuItem, idx) => {
+                                return (
+                                    <Link key={idx} href={menuItem.path} className={cn("flex items-center gap-2 py-1 px-2 duration-300 rounded-full hover:bg-red-500 hover:text-white group", pathname == menuItem.path && "backdrop-blur-md text-white bg-red-600")}>
+                                        {menuItem.title}
+                                    </Link>
+                                )
+                            })}
+                        </div>
                     </div>
-                    <Link href="/store" className="items-center hidden px-2 py-1 text-white duration-300 bg-red-600 rounded-full lg:flex hover:bg-red-500">
-                        <span>Order now</span>
-                        <div className="flex items-center mt-0.5 ml-2 bg-white rounded-full animate-pulse size-2" />
-                    </Link>
-                    <button onClick={() => setNav(!nav)} className="lg:hidden">
-                        {nav ? <X strokeWidth={1} /> : <Menu strokeWidth={1} />}
-                    </button>
+                    <div className="items-center hidden lg:flex">
+                        <Link href="/search/" className="flex items-center px-2 py-1 mr-4 bg-white border text-neutral-500 w-72 rounded-xl cursor-text">
+                            <Search size={20} strokeWidth={1} />
+                            <span className="pl-4 font-extralight">Search Products...</span>
+                        </Link>
+                        <Link href="/store" className="flex items-center px-2 py-1 text-white duration-300 bg-red-600 rounded-xl hover:bg-red-500">
+                            <span>Order now</span>
+                            <div className="flex items-center mt-0.5 ml-2 bg-white rounded-full animate-pulse size-2" />
+                        </Link>
+                    </div>
+                    <div className="flex items-center gap-4 lg:hidden">
+                        <Link href="/search/" className="flex px-2 py-1 bg-white border w-max items-cente text-neutral-500 rounded-xl cursor-text">
+                            <Search size={20} strokeWidth={1} />
+                            <span className="pl-4 font-extralight">Search Products...</span>
+                        </Link>
+                        <button onClick={() => setNav(!nav)} className="lg:hidden">
+                            {nav ? <X strokeWidth={1} /> : <Menu strokeWidth={1} />}
+                        </button>
+                    </div>
                 </div>
             </header>
             <nav className={cn("w-full fixed px-4 top-[76px]", nav ? "z-[1000]" : "-z-[1000]")}>

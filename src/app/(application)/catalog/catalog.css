@@ -1,0 +1,21 @@
+/* Sidebar scrollbar */
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0px;
+}

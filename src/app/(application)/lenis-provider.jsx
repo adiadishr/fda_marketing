@@ -3,7 +3,7 @@
 import Lenis from 'lenis'
 import { useEffect } from 'react'
 
-export default function PageClient({ children }) {
+export default function LenisProvider({ children }) {
     useEffect(() => {
         const lenis = new Lenis()
         function raf(time) {
