@@ -45,14 +45,12 @@ export default function Page() {
     const filteredAndSortedProducts = useMemo(() => {
         let filtered = products;
 
-        // Filter by selected suppliers
         if (selectedSuppliers.length > 0) {
             filtered = filtered.filter((product) =>
                 selectedSuppliers.includes(product.supplier)
             );
         }
 
-        // Apply sorting
         return filtered.sort((a, b) => {
             if (sortOrder === "priceLowHigh") return a.price - b.price;
             if (sortOrder === "priceHighLow") return b.price - a.price;
